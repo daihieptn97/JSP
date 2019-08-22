@@ -1,0 +1,53 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style><%@include file="/WEB-INF/css/style.css" %></style>
+
+</head>
+
+<body>
+	<%-- <form action="<%= request.getContextPath() %>/Demo" method="post" style="width: 800px; margin: auto">	
+		  <div class="container">
+		    <label for="uname"><b>Username</b></label>
+		    <input type="text" placeholder="Enter Username" name="user" required>
+		
+		    <label for="psw"><b>Password</b></label>
+		    <input type="password" placeholder="Enter Password" name="password" required>
+		
+		    <button type="submit">Login</button>
+		    <label>
+		      <input type="checkbox" checked="checked" name="remember"> Remember me
+		    </label>
+		  </div>
+		
+		  <div class="container" style="background-color:#f1f1f1">
+		    <button type="button" class="cancelbtn">Cancel</button>
+		    <span class="psw">Forgot <a href="#">password?</a></span>
+		  </div>
+	</form> --%>
+	
+	
+	<form class="login">
+  <div class="form-group">
+    <input type="text" class="user" name="user" placeholder="type your user name">
+    <input type="password" class="pwd" name="pwd" placeholder="type your password">
+  </div>
+  <span class="links">
+    <a href="#">signup</a>
+    <a href="#">forgot password ?</a>
+  </span>
+  <br/>
+  <input type="button" class="btn" value="login">     
+</form>
+
+<script  src="<%=request.getContextPath()%>/js/validation.js"></script>
+</body>
+
+
+</html>
+
+
