@@ -1,0 +1,13 @@
+package Ultils;
+
+import javax.persistence.*;
+//import javax.persistence.Table;
+
+@Entity
+@Table
+
+
+public class SinhVien {
+	
+	private int ID;
+}

@@ -1,5 +1,0 @@
-INDEX VERSION 1.131
-C:\Users\Hiep\Desktop\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1406213844.index
-\Hello\src
-C:\Users\Hiep\Desktop\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\437191040.index
-\Hello\src

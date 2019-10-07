@@ -1,0 +1,6 @@
+package Ultils;
+
+public class SinhVien {
+	
+	private int ID;
+}

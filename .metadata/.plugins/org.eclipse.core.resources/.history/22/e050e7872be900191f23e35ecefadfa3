@@ -1,0 +1,11 @@
+package Ultils;
+
+import org.hibernate.SessionFactory;
+
+public class HibernativeUtils {
+	public static SessionFactory sessionFactory;
+	
+	public static SessionFactory getSessionFactory() {
+		
+	}
+}
