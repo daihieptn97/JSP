@@ -1,0 +1,24 @@
+package Ultils;
+
+import javax.transaction.Transaction;
+
+import org.hibernate.Session;
+
+public class MainActivity {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public static void SaveSinhVien() {
+		Transaction transaction = null;
+		try {
+			Session session = HibernativeUtils.getSessionFactory().openSession();
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+
+}

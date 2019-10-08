@@ -1,0 +1,14 @@
+package Ultils;
+
+import javax.persistence.*;
+//import javax.persistence.Table;
+
+@Entity
+@Table(name = "sinhvien")
+
+
+public class SinhVien {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int ID;
+}

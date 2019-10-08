@@ -1,0 +1,16 @@
+package Ultils;
+
+import javax.transaction.Transaction;
+
+public class MainActivity {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public static void SaveSinhVien() {
+		Transaction transaction = null;
+	}
+
+}
