@@ -1,0 +1,14 @@
+package Model;
+
+import com.mysql.jdbc.Connection;
+
+public class SQLManager {
+	private String url = "jdbc:mysql://localhost:3306/bookmanager";
+	private String pass ="";
+	private String user ="root";
+	private Connection conn = null;
+	
+	public void getOpenConnection() {
+		
+	}
+}

@@ -1,0 +1,21 @@
+package Model;
+
+import java.sql.DriverManager;
+
+import com.mysql.jdbc.Connection;
+
+public class SQLManager {
+	private String url = "jdbc:mysql://localhost:3306/bookmanager";
+	private String pass ="";
+	private String user ="root";
+	private Connection conn = null;
+	
+	public void getOpenConnection() {
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			conn = DriverManager.getConnection(url, user, pass);
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}

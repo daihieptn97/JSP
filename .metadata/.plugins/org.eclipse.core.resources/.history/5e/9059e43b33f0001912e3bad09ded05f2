@@ -1,0 +1,22 @@
+/**
+ * 
+ */
+package Untils;
+
+/**
+ * @author Hiep
+ *
+ */
+public class Sach {
+	
+	private int id, gia;
+	private String ten;
+	
+	/**
+	 * 
+	 */
+	public Sach() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
