@@ -14,23 +14,23 @@ public class MainActivity {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 //		
-
+		
 //		showList();
-
+		
 //		SaveSinhVien(generatingObject());
 		showList();
 	}
-
+	
 	public static SinhVien generatingObject() {
 		// gen msv random
 		String timecurent = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
-
-		// gen edge random
+		
+		//gen edge random
 		Random rand = new Random();
 		// Obtain a number between [0 - 49].
 		int edge = rand.nextInt(50);
-
-		SinhVien sv = new SinhVien("DTC" + timecurent, "Hiep " + edge, edge, "TN", "Nam");
+		
+		SinhVien sv = new SinhVien("DTC" +timecurent, "Hiep " + edge, edge, "TN", "Nam");
 		return sv;
 	}
 

@@ -6,17 +6,21 @@ import javax.persistence.*;
 @Entity
 @Table(name = "sinhvien")
 
+
 public class SinhVien {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
+	
 
 	private String msv;
+	
 
 	private String ten;
+	
 
 	private int tuoi;
-
+	
 	@Column(name = "quequan")
 	private String qq;
 
@@ -92,5 +96,6 @@ public class SinhVien {
 		this.qq = qq;
 		this.gt = gt;
 	}
-
+	
+	
 }

@@ -26,9 +26,7 @@ public class HibernativeUtils {
 				pr.put(Environment.USER, "root");
 				pr.put(Environment.DIALECT, "org.hibernate.dialect.MySQLDialect");
 				pr.put(Environment.SHOW_SQL, "true");
-				pr.put(Environment.HBM2DDL_AUTO, "create-drop");
-				
-				
+
 				configuration.setProperties(pr);
 
 				configuration.addAnnotatedClass(SinhVien.class);

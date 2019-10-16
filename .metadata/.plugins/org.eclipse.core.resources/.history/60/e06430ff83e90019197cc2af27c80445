@@ -6,20 +6,26 @@ import javax.persistence.*;
 @Entity
 @Table(name = "sinhvien")
 
+
 public class SinhVien {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id")
 	private int id;
-
+	
+	@Column(name = "msv")
 	private String msv;
-
+	
+	@Column(name = "ten")
 	private String ten;
-
+	
+	@Column(name = "tuoi")
 	private int tuoi;
-
+	
 	@Column(name = "quequan")
 	private String qq;
-
+	
+	@Column(name = "gt")
 	private String gt;
 
 	public int getId() {
@@ -92,5 +98,6 @@ public class SinhVien {
 		this.qq = qq;
 		this.gt = gt;
 	}
-
+	
+	
 }
