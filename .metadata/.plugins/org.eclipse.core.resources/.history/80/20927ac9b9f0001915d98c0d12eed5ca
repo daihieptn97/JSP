@@ -1,0 +1,31 @@
+package Ultils;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+
+
+@Entity
+@Table(name = "sach")
+public class Sach {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id;
+	
+	@Column(name = "tensach")
+	private String ten;
+	
+	@Column(name = "giasach")
+	private int gia;
+	
+	
+	public Sach() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

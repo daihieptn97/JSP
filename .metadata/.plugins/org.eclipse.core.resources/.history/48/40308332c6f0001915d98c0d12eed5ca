@@ -1,0 +1,30 @@
+package Ultils;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.Table;
+
+import org.hibernate.annotations.ManyToAny;
+@Entity
+@Table(name = "mua")
+public class Mua {
+	
+	
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id;
+	
+	
+	@ManyToMany(mappedBy = "mua")
+	@JoinTable()
+	
+	private int id_nguoimua;
+	
+	private int id_sach;
+}

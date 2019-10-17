@@ -1,0 +1,75 @@
+package Model;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.sun.org.apache.xpath.internal.compiler.OpCodes;
+
+import Ultils.Sach;
+
+
+
+public class SQLmanager {
+
+	public SQLmanager() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	private String url = "jdbc:mysql://localhost:3306/bookmanager";
+	private String pass ="";
+	private String user ="root";
+	private Connection conn = null;
+	
+	public void getOpenConnection() {
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			conn = DriverManager.getConnection(url, user, pass);
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+	}
+	
+	public List<Ultils.Sach> listAll() {
+		getOpenConnection();
+		List<Sach> ls = new ArrayList<Sach>();
+		try {
+			String sql = "SELECT * FROM `sach`";
+			Statement statement = conn.createStatement();
+			ResultSet resultSet = statement.executeQuery(sql);
+			
+			while(resultSet.next()) {
+				//System.out.println(resultSet.getString(2));
+				ls.add(new Sach(
+						resultSet.getInt(1),
+						resultSet.getInt(3),
+						resultSet.getString(2)
+						));
+			}
+			return ls;
+		} catch (Exception e) {
+			e.printStackTrace();
+			// TODO: handle exception
+		}
+		return null;
+	}
+	
+	public boolean insert(Sach sach) {
+		
+		getOpenConnection();
+		try {
+			String sql = "INSERT INTO `sach`( `tensach`, `giasach`) VALUES (?, ?)";
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+			// TODO: handle exception
+		}
+		
+		return false;
+	}
+
+}

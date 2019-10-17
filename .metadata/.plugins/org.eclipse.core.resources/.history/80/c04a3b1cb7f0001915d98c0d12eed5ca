@@ -1,0 +1,9 @@
+package Ultils;
+
+public class HibernaterUltils {
+
+	public HibernaterUltils() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

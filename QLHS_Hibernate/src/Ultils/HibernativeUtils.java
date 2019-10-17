@@ -12,9 +12,9 @@ public class HibernativeUtils {
 	public static SessionFactory sessionFactory = null;
 
 	public static SessionFactory getSessionFactory() {
-		System.out.println(sessionFactory);
+	
 		if (sessionFactory == null) {
-			System.out.println(sessionFactory);
+			
 			try {
 				Configuration configuration = new Configuration();
 
@@ -37,7 +37,7 @@ public class HibernativeUtils {
 						.applySettings(configuration.getProperties()).build();
 
 				sessionFactory = configuration.buildSessionFactory(serviceRegistry);
-				System.out.println(sessionFactory);
+				
 				return sessionFactory;
 			} catch (Exception e) {
 				e.printStackTrace();

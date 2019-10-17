@@ -1,0 +1,62 @@
+package Ultils;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "nguoimua")
+public class NguoiMua {
+	
+	@ManyToMany(mappedBy = "nguoimua")
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id;
+	
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getTen() {
+		return ten;
+	}
+
+	public void setTen(String ten) {
+		this.ten = ten;
+	}
+
+	public int getTuoi() {
+		return tuoi;
+	}
+
+	public void setTuoi(int tuoi) {
+		this.tuoi = tuoi;
+	}
+
+	public NguoiMua(String ten, int tuoi) {
+		super();
+		this.ten = ten;
+		this.tuoi = tuoi;
+	}
+
+	public NguoiMua(int id, String ten, int tuoi) {
+		super();
+		this.id = id;
+		this.ten = ten;
+		this.tuoi = tuoi;
+	}
+
+	private String ten;
+	
+	private int tuoi;
+}

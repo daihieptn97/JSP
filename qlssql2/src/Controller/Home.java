@@ -38,9 +38,16 @@ public class Home extends HttpServlet {
 		
 //		System.out.println(ls.get(0).getTen());
 		
+		String action = (String) request.getParameter("action");
+		
+		if(action != null && action.equalsIgnoreCase("add")) {
+			request.getRequestDispatcher("Add").forward(request, response);
+		}
+		
 		request.setAttribute("list", ls);
 		
 		request.getRequestDispatcher("trangchu.jsp").forward(request, response);
+		
 	}
 
 	/**

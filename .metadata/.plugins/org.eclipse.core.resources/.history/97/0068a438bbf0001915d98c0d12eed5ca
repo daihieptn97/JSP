@@ -1,0 +1,24 @@
+package Ultils;
+
+import java.util.List;
+
+import org.hibernate.Session;
+
+public class MainActivity {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<Sach> list = show();
+	}
+	
+	public static List<Sach> show() {
+		try {
+			Session session = HibernaterUltils.getSessionFactory().openSession();
+			return session.createQuery("select Sach").list();
+		} catch (Exception e) {
+			e.printStackTrace();
+			// TODO: handle exception
+		}
+		return null;
+	}
+}

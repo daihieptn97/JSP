@@ -1,0 +1,12 @@
+package Ultils;
+
+public class HibernaterUltils {
+
+	public HibernaterUltils() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public static SessionF name() {
+		
+	}
+}

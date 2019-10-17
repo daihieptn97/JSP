@@ -1,0 +1,9 @@
+package Ultils;
+
+public class Mua {
+	private int id;
+	
+	private int id_nguoimua;
+	
+	private int id_sach;
+}

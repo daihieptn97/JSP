@@ -1,0 +1,22 @@
+package Ultils;
+
+import javax.persistence.Table;
+
+import org.hibernate.annotations.Entity;
+
+@Entity
+@Table(name = "sach")
+public class Sach {
+	
+	private int id;
+	
+	private String ten;
+	
+	private int gia;
+	
+	
+	public Sach() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,13 @@
+package Ultils;
+
+public class Sach {
+	private int id;
+	
+	private String ten;
+	
+	private int gia;
+	public Sach() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

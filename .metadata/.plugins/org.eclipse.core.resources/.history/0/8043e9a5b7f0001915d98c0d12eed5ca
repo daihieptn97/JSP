@@ -1,0 +1,27 @@
+package Ultils;
+
+import java.util.Properties;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+public class HibernaterUltils {
+	public static SessionFactory sessionFactory;
+	
+	public HibernaterUltils() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public static SessionFactory getSessionFactory() {
+		if(sessionFactory == null) {
+			try {
+				Configuration configuration = new Configuration();
+				
+				Properties properties = new Properties();
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+		}
+		return null;
+	}
+}

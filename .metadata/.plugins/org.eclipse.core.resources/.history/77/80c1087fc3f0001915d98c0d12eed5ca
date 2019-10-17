@@ -1,0 +1,14 @@
+package Ultils;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "nguoimua")
+public class NguoiMua {
+	private int id;
+	
+	private String ten;
+	
+	private int tuoi;
+}

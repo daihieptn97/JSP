@@ -1,0 +1,15 @@
+package Ultils;
+
+import org.hibernate.SessionFactory;
+
+public class HibernaterUltils {
+	public static SessionFactory sessionFactory;
+	public HibernaterUltils() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public static SessionFactory getSessionFactory() {
+		
+		return null;
+	}
+}
